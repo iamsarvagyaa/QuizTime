@@ -1,0 +1,491 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>09-apr-2021</title><link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700|Roboto:300,300i,400,400i,700,700i&subset=latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; --title-bar-height:20px; }
+.mac-os-11 { --title-bar-height:28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none 0s ease 0s; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-require-zoom-fix foreignobject { font-size: var(--mermaid-font-zoom); }
+
+
+@include-when-export url('https://fonts.googleapis.com/css?family=Inconsolata:400,700|Roboto:300,300i,400,400i,700,700i&subset=latin-ext');
+
+:root {
+  --accent-color: #aeb1b5;
+  --dark-accent-color: #787a7c; /* #'s before H1-3 */
+  --background-color: white;
+  --border-color: #ddd; 
+  --code-bg-color: #f8f8f8; 
+  --font-color: #42464c;
+  --header-color: #222324;
+  --link-color: #2077b2;
+  --control-text-color: #667176;
+  --side-bar-bg-color: #fafafa;
+  --body-font: "Iosevka", "Fira Mono", "Source Code Pro", Courier, monospace;
+  --header-font: "Fira Sans", "Roboto", "Source Sans Pro", sans-serif;
+  --border-radius: 2px;
+  --document-horizontal-margin: 80px;
+  --document-padding-x: 10ch;
+  --font-size: 16px;
+  --h1-fontsize: 2rem;   /* 1,5   rem = 24px */
+  --h2-fontsize: 1.375rem; /* 1,375 rem = 22px */
+  --h3-fontsize: 1.25rem;  /* 1,25  rem = 20px */
+  --h4-fontsize: 1.125rem; /* 1,125 rem = 18px */
+  --line-height: 1.4;
+  --main-content-margin: 0 auto;
+  --main-content-max-width: 100ch;
+  --monospace-font-size: 15px;
+  --monospace-font: "Iosevka", "Fira Mono", "Source Code Pro", Courier, monospace;
+  --monospace-line-height: 1.4;
+  --monospace: var(--monospace-font); /* Fixes source code mode */
+  --nav-width: 200px;
+  --vertical-padding: 40px;
+}
+
+/* Narrow layout styles */
+@media (max-width: 640px) {
+  :root {
+    --document-padding-x: 4ch;
+  }
+}
+
+html {
+  font-size: var(--font-size);
+  background-color: var(--background-color);
+}
+
+html,
+body {
+  color: var(--font-color);
+  font-family: var(--body-font);
+  line-height: var(--line-height);
+}
+
+#write {
+	/* size of writing area: */
+  padding-left: var(--document-padding-x);
+  padding-right: var(--document-padding-x);
+  max-width: var(--main-content-max-width);
+  box-sizing: border-box;
+}
+
+/**
+ * ---------------------
+ * Block Elements
+ */
+
+/* yaml */
+pre.md-meta-block {
+  background-color: var(--background-color);
+  padding-bottom: .5rem;
+  color: var(--accent-color);
+  border-bottom: 2px solid var(--border-color);
+  font-family: var(--monospace-font);
+}
+
+/* headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--header-font);
+  font-weight: bold;
+  color: var(--header-color);  
+}
+
+h1 {
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  font-size: var(--h1-fontsize);
+}
+
+h1:not(:first-child) {
+  margin-top: 3rem;
+}
+
+h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: var(--h2-fontsize);
+}
+
+h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: var(--h3-fontsize);
+}
+
+h4, h5, h6 {
+  color: var(--header-color);  
+  margin-top: 1rem;
+  margin-bottom: 0rem;
+  font-size: 1rem;
+}
+
+h4 {
+  font-size: var(--h4-fontsize);
+}
+
+h6 {
+  color: var(--control-text-color);	
+}
+
+/*  We do not need this crap. This will be removed eventually
+h1::before,
+h2::before,
+h3::before {
+  font-weight: 400;
+  text-align: right;
+  width: 5ch;
+  padding-right: 1ch;
+  margin-left: -5ch;
+  color: var(--dark-accent-color);
+  display: inline-block;
+}
+
+h1::before {
+  content: '#';
+}
+
+h2::before {
+  content: '##';
+}
+
+h3::before {
+  content: '###';
+} */
+
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+
+/* table */
+table {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+table tr:nth-child(2n),
+thead {
+    background-color: var(--side-bar-bg-color);
+}
+
+td,
+th {
+  border-style: solid;
+  border-color: var(--border-color);
+  border-width: 1px;
+  padding: .35rem .7rem
+}
+
+li p {
+  margin: 0;
+}
+
+.task-list {
+  padding-left: 0;
+}
+
+.task-list-item {
+  padding-left: 1.5em;
+  margin-bottom: 0rem;
+}
+
+#write input[type='checkbox'] {
+  margin-top: 5px;
+}
+
+blockquote {
+  margin: 1rem 0;
+  padding-left: 2ch;
+  margin-left: .5ch;
+  position: relative;
+  overflow: hidden;
+  border-left: 2px solid var(--border-color);
+  color: var(--accent-color);
+}
+
+/* horizontal line */
+hr {
+  border: none;
+  border-bottom: 2px solid var(--border-color);
+  margin-top: 1.4rem;
+  margin-bottom: 1.4rem;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+/**
+ * Code Fences
+ * see http:/*support.typora.io/Code-Block-Styles
+ */
+
+.cm-s-inner .CodeMirror-gutters {
+   background: var(--code-bg-color);
+}
+
+.code-tooltip {
+  box-shadow: none;
+  border-radius: var(--border-radius);
+  background-color: var(--code-bg-color);
+  border-color: var(--border-color);
+  border-style: solid;
+  border-width: 1px;
+}
+
+.code-tooltip input {
+  outline: none;
+  width: 20ch;
+}
+
+.md-fences .code-tooltip {
+  bottom: -1.8rem;
+  padding: none;
+}
+
+.md-fences.md-focus .cm-s-inner {
+  /* Remove bottom right border radius when tooltip is shown */
+  border-bottom-right-radius: 0;
+}
+
+/* code tooltip autocomplete list */
+
+.autoComplt-hint {
+  background-color: transparent !important;
+  margin: 0 !important;
+  padding: 0.125rem 0.375rem !important;
+  color: var(--text-color) !important;
+  line-height: var(--line-height) !important;
+  height: 1.4rem !important;
+}
+
+.autoComplt-hint-selected {
+  background-color: var(--link-color) !important;
+  color: var(--background-color) !important;
+}
+
+/* basic styles */
+
+.md-fences,
+code,
+tt {
+  border: 1px solid var(--border-color);
+  background-color: var(--code-bg-color);
+  font-family: var(--monospace-font);
+  font-size: var(--monospace-font-size);
+  border-radius: .25rem;
+  padding: 0 .125rem;
+  line-height: var(--monospace-line-height);
+}
+
+.md-fences {
+  margin-bottom: 18px;
+  margin-top: 15px;
+  padding: 0.2em 1em;
+  padding-top: 8px;
+  padding-bottom: 6px;
+}
+
+a {
+  color:  var(--link-color);
+  text-decoration: none;
+}
+
+
+/**
+ * Control UI (optional)
+ */
+
+.outline-item:hover {
+  color: var(--header-color);
+}
+
+#write div.md-toc-tooltip {
+	background-color: var(--background-color);
+}
+
+
+
+</style>
+</head>
+<body class='typora-export'>
+<div id='write'  class=''><h1><a name="09-april-2021" class="md-header-anchor"></a><span>09 April 2021</span></h1><blockquote><p>🔖<span> Written by twitter at iamsarvagyaa</span></p></blockquote><p><span>Hello to all of you </span>✋<span> I just recovered from COVID and today I was eager to learn new stuff, So I started solving quiztime challenges. Here, is a good challenge which is lil bit tough for me. Challenge was posted by Fiete Stegers. Here is challenge - </span><a href='https://twitter.com/fiete_stegers/status/1380585885419327490'><span>look at this</span></a><span>.</span></p><p><img src="../static/09apr2021/question.png" referrerpolicy="no-referrer"></p><p><span>I started looking for clues in this image, got lot of clues but the problem is I&#39;m from India not from Europe side, that&#39;s why I got lot of problems but here I&#39;ll show you how I faced and solved this challenge. Problems like, I don&#39;t know much about structure, landmarks etc of Germany. First of all I downloaded the image and started finding clues in this image. I got no strong clue and I don&#39;t know what to do. Below are clue marks.</span></p><p><img src="../static/09apr2021/clues.png" referrerpolicy="no-referrer"></p><p><span>Now, I croped the name &quot;Motel&quot;, flipped and rotate it. Also, I imported that flipped image and glued on question image. I found the name &quot;Motel&quot; and that is easy to read after flipping the text. Searched on google  </span><strong><span>Motel One in Germany</span></strong><span>, got lots of hotels and this will take time. So, I quit this process and start working on next clue which is a tower and the logo </span><strong><span>&quot;t&quot;</span></strong><span> clearly visible.</span></p><blockquote><p>💡<span> </span><strong><span>Note</span></strong><span> Why I searched for Germany? - because fiete is from germany, I saw a lot of tweets of him which is in german language. That&#39;s why I searched.</span></p></blockquote><p><img src="../static/09apr2021/edited.png" referrerpolicy="no-referrer"></p><p><span>I searched in Google, </span><strong><span>&quot;t logo tower in germany&quot;</span></strong><span> and I got wonderful result. Got the name of that tower. Here, is an article - </span><a href='https://www.wsj.com/articles/deutsche-telekom-may-sell-t-mobile-netherlands-unit-1445358195' target='_blank' class='url'>https://www.wsj.com/articles/deutsche-telekom-may-sell-t-mobile-netherlands-unit-1445358195</a><span>. The name of the tower is </span><strong><span>deutsche telekom</span></strong><span> .</span></p><p><img src="../static/09apr2021/tower.png" referrerpolicy="no-referrer"></p><p><span>Opened google map and searched this &quot;deutsche telekom near Colonial Broadcasting Tower, Inner Kanalstraße, Cologne, Germany&quot; and got this result. One of the best thing, I got water sources near telekum tower which is near mediapark. Now, I feel like the challenge is solved. Look at the highlighted areas.</span></p><p><img src="../static/09apr2021/located.png" referrerpolicy="no-referrer"></p><p><span>Because, there&#39;s a hotel named &quot;Hotel Motel One Köln-Mediapark&quot;. I jumped into street view and I started matching all clues. Air ventilation is also matching and water source is also matching, there&#39;s a traffic light is also matching. Finally, we solved this challenge :) </span>
+<img src="../static/09apr2021/final.png" referrerpolicy="no-referrer"></p><p><span>I learned a lot of things. Learned, donot leave any clues.</span></p><ul><li><span>Co-ordinates : 50.9471436,6.9451573</span></li><li><span>Answer : Hotel Motel One Köln-Mediapark, Cologne, Germany.</span></li></ul></div>
+</body>
+</html>
